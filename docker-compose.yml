@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    container_name: my_nextjs_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - GBS=testandoTUDO
+    ports:
+      - "3000:3000"
+    # Outros detalhes do serviço
